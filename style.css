@@ -1,0 +1,134 @@
+* {
+  /* Reset margin and set a specific font-family */
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  /* Set background color of the body */
+  background: #FFEBC6;
+}
+
+header {
+  /* Flex container settings for the header */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background: #003844;
+}
+
+.header-btn {
+  /* Styling for header buttons */
+  padding: 5px;
+  /* border: 2px solid black; */
+  border-radius: 4px;
+  background: goldenrod;
+  margin: 3px 5px;
+}
+
+.header-btn a {
+  /* Styling for anchor tags in header buttons */
+  text-decoration: none;
+  color: black;
+}
+
+main {
+  /* Flex container settings for the main content */
+  display: flex;
+}
+
+aside {
+  /* Styling for the sidebar */
+  background: #006c67;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.coin {
+  /* Styling for coin cards */
+  text-align: center;
+  padding: 4px;
+  margin: 5px 4px;
+  border: 2px solid;
+  border-radius: 4px;
+  background: gainsboro;
+}
+
+.coin img {
+  /* Margin for images in coin cards */
+  margin: 0 5px;
+}
+
+article {
+  /* Styling for articles */
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #ffb100;
+}
+
+.article-item {
+  /* Flex container settings for article items */
+  display: flex;
+  align-items: center;
+  margin: 5px;
+  padding: 40px 10px;
+  background: gainsboro;
+  border-radius: 8px;
+}
+
+.article-item p {
+  /* Center text and add padding for article item paragraphs */
+  text-align: center;
+  padding: 5px;
+}
+
+.article-item img {
+  /* Padding for images in article items */
+  padding: 10px;
+}
+
+nav {
+  /* Styling for the navigation bar */
+  background: #006c67;
+  flex: 1;
+}
+
+.user {
+  /* Styling for user profiles */
+  margin: 8px;
+  border-radius: 8px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: gainsboro;
+}
+
+.user img {
+  /* Padding for user profile images */
+  padding: 5px;
+}
+
+footer {
+  /* Styling for the footer */
+  padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+footer li a {
+  /* Styling for links in the footer */
+  color: black;
+}
+
+@media (max-width: 480px) {
+  /* Responsive design: Adjust layout for small screens */
+  main {
+    flex-direction: column;
+  }
+}
